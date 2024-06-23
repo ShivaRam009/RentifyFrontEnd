@@ -1,0 +1,10 @@
+.color-div {
+    height: max-content;
+    background: linear-gradient(to bottom, #000000 88%, #ffffff 88%);
+  }
+
+.body-heading{
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50.4px;
+}
