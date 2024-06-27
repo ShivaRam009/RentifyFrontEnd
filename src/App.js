@@ -6,6 +6,7 @@ import Services from './Services';
 import Home from './Home';
 import About from './About';
 import Properties from './Properties';
+import ContactUs from './ContactUs.jsx';
 import './App.css';
 
 const router = createBrowserRouter([
@@ -41,6 +42,14 @@ const router = createBrowserRouter([
       </Layout>
     ),
   },
+  {
+    path:'/contactus',
+    element:(
+      <Layout>
+        <ContactUs/>
+      </Layout>
+    )
+  }
 ]);
 
 function App() {

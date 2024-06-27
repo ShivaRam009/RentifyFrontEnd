@@ -21,14 +21,12 @@ export default function Navbar() {
             <li>
               <Link to='/agents' className="text-black hover:text-gray-700">Agents</Link>
             </li>
-            <li>
-              <Link to="/about" className="text-black hover:text-gray-700">About Us</Link>
-            </li>
+            
             <li>
               <Link to="/properties" className="text-black hover:text-gray-700">Properties List</Link>
             </li>
             <li>
-              <Link to="/Contact" className="text-black hover:text-gray-700">Contact</Link>
+              <Link to="/contactus" className="text-black hover:text-gray-700">Contact</Link>
             </li>
           </ul>
         </div>

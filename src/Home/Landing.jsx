@@ -3,6 +3,7 @@ import Rentifyhome from '../assets/Rentifyhome1.webp';
 import Rentify2 from '../assets/Rentify2.webp';
 import Rentify3 from '../assets/Rentify3.webp';
 import "./Landing.css";
+import {Link} from 'react-router-dom';
 
 
 export default function Landing() {
@@ -123,7 +124,9 @@ export default function Landing() {
             <p className='text-xl'>We offer a comprehensive range of property listings to help you find the perfect</p>
             <p className='text-xl'>home for you and your family. With our cutting-edge search tools and expert</p>
             <p className='text-xl mb-10'>advice, you can rest assured that you will find the right match.</p>
-            <button style={{backgroundColor:"#3A5BCC"}} className='text-white px-4 py-3 mt-5 mb-16'>Contact Us</button>
+            <button style={{backgroundColor:"#3A5BCC"}} className='text-white px-4 py-3 mt-5 mb-16'>
+                <Link to="/contactus">Contact Us</Link>
+            </button>
         </div>
         </>
     );
