@@ -34,7 +34,7 @@ const AddPropertyForm = ({ onPropertyAdded, onCancel }) => {
         const userID=localStorage.getItem('ID');
         try {
             const token = localStorage.getItem('token'); // Assuming you have token stored in localStorage
-            const response = await axios.post(`http://localhost:5000/addProperty/${userID}`, formData, {
+            const response = await axios.post(`https://rentify-server-ashen.vercel.app/${userID}`, formData, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

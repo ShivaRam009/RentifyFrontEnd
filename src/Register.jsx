@@ -32,7 +32,7 @@ export default function Register() {
         const formErrors = validateForm();
         if (Object.keys(formErrors).length === 0) {
             try {
-                const response = await axios.post('http://localhost:5000/register', {
+                const response = await axios.post('https://rentify-server-ashen.vercel.app/register', {
                     firstName,
                     lastName,
                     email,

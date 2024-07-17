@@ -9,7 +9,7 @@ export default function Properties() {
   useEffect(()=>{
     const fetchData = async () => {
       try {
-          const response = await axios.get("http://localhost:5000/allProperties");
+          const response = await axios.get("https://rentify-server-ashen.vercel.app/allProperties");
           setPropertiesArray(response.data);
       } catch (err) {
           console.log(err);

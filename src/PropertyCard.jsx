@@ -20,7 +20,7 @@ const PropertyCard = ({ property, onLike }) => {
       setRole(localStorage.getItem('role'));
 
       // Fetch the liked state from the server
-      axios.get(`http://localhost:5000/isPropertyLiked/${property._id}`, {
+      axios.get(`https://rentify-server-ashen.vercel.app/${property._id}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -35,7 +35,7 @@ const PropertyCard = ({ property, onLike }) => {
   const handleLike = async () => {
     try {
       if (isLoggedIn) {
-        const response = await axios.post(`http://localhost:5000/likeProperty/${property._id}`, {}, {
+        const response = await axios.post(`https://rentify-server-ashen.vercel.app/${property._id}`, {}, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`
           }
@@ -53,7 +53,7 @@ const PropertyCard = ({ property, onLike }) => {
 
   const handleDelete=async()=>{
     if(isLoggedIn){
-      const response=await axios.delete(`http://localhost:5000/deleteProperty/${property._id}`);
+      const response=await axios.delete(`https://rentify-server-ashen.vercel.app/${property._id}`);
       window.location.reload();
       console.log(response);
     }

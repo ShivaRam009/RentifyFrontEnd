@@ -50,7 +50,7 @@ export default function AuthForm() {
         const formErrors = validateLoginForm();
         if (Object.keys(formErrors).length === 0) {
             try {
-                const response = await axios.post('http://localhost:5000/login', { email, password });
+                const response = await axios.post('https://rentify-server-ashen.vercel.app/login', { email, password });
                 console.log(response.data);
                 setSuccessMessage('Login successful!');
                 localStorage.setItem('token', response.data.token);
@@ -71,7 +71,7 @@ export default function AuthForm() {
         const formErrors = validateRegisterForm();
         if (Object.keys(formErrors).length === 0) {
             try {
-                const response = await axios.post('http://localhost:5000/register', {
+                const response = await axios.post('https://rentify-server-ashen.vercel.app/register', {
                     firstName,
                     lastName,
                     email,

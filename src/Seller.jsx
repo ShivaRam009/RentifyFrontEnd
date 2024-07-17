@@ -13,7 +13,7 @@ export default function Seller() {
         if (id) {
             const fetchData = async () => {
                 try {
-                    const response = await axios.get(`http://localhost:5000/getUserProperties/${id}`);
+                    const response = await axios.get(`https://rentify-server-ashen.vercel.app/getUserProperties/${id}`);
                     setProperties(response.data);
                     console.log("Fetched user properties:", response.data);
                 } catch (err) {
